@@ -1,0 +1,21 @@
+# Variables de entorno
+.env
+.env.local
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# Python cache y bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Logs
+*.log
+logs/
+
+# Docker
+.dockerignore
