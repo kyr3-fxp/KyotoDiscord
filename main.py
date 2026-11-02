@@ -31,7 +31,7 @@ intents = discord.Intents.default()
 intents.message_content = True  # Manejo de contenido de mensajes
 
 # 4. Definición de la subclase del Bot con soporte para Cogs y Sync
-class KyotoBot(commands.Bot):
+class MilaBot(commands.Bot):
     def __init__(self):
         super().__init__(
             command_prefix=commands.when_mentioned_or("!"),
@@ -74,11 +74,11 @@ class KyotoBot(commands.Bot):
         await self.change_presence(
             activity=discord.Activity(
                 type=discord.ActivityType.watching, 
-                name="/ping | Kyoto Bot"
+                name="/ping | Mila"
             )
         )
 
-bot = KyotoBot()
+bot = MilaBot()
 
 if __name__ == "__main__":
     bot.run(TOKEN, log_handler=None)
